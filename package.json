@@ -5,7 +5,7 @@
   "scripts": {
     "build": "webpack --mode production",
     "serve": "webpack-dev-server --mode development",
-    "sass": "sass --watch dist/assets/sass:dist/assets/css"
+    "sass": "node-sass --w ./dist/assets/sass -o ./dist/assets/css --recursive"
   },
   "keywords": [],
   "author": "",
@@ -19,12 +19,8 @@
     "webpack-cli": "^5.1.0"
   },
   "dependencies": {
-    "@barba/core": "^2.9.7",
-    "@splidejs/splide": "^4.1.4",
-    "animejs": "^3.2.1",
     "materialize-css": "^1.0.0-rc.2",
-    "sass": "^1.58.3",
-    "typeit": "^8.7.1",
+    "node-sass": "^9.0.0",
     "webpack-dev-server": "^4.15.0"
   },
   "description": ""
